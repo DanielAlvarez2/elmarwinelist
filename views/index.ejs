@@ -4,9 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Connection: Server/MongoDB Client</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            min-height:100vh;
+            display:grid;
+            place-content:center;
+        }
+        .page{
+            width:8.5in;
+            height:11in;
+            border:1px solid black;
+            background:beige;
+        }
+        h1,h2{
+            font-size:1rem;
+            font-weight: normal;
+        }
+        h1{
+            padding:50px 0;
+        }
+        h2{
+            padding-top:25px;
+        }
+        .item{
+            width:100%;
+            padding:5px 0;
+        }
+        .bin,
+        .description,
+        .vintage,
+        .price{
+            display:inline-block;
+        }
+        .bin{
+            width:1in;
+            text-align:right;
+        }
+        .description{
+            width:5.5in;
+            margin-left:0.25in;
+        }
+        .vintage{
+            width:1in;
+        }
+    </style>
 </head>
 <body>
-    TEST INDEX.ejs rendering!<br><br>
-    <%= info[0].x%>
+<div class='page'>
+
+    <h1><span class='bin'></span>
+        <span class='description'>BY THE GLASS SELECTION</span></h1>
+    <h2><span class='bin'></span>
+        <span class='description'>SAKE</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[0].bin %></span>
+            <span class='description'><%= info[0].description %></span>
+            <span class='vintage'><%= info[0].vintage %></span>
+            <span class='price'><%= info[0].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[1].bin %></span>
+            <span class='description'><%= info[1].description %></span>
+            <span class='vintage'><%= info[1].vintage %></span>
+            <span class='price'><%= info[1].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[2].bin %></span>
+            <span class='description'><%= info[2].description %></span>
+            <span class='vintage'><%= info[2].vintage %></span>
+            <span class='price'><%= info[2].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[3].bin %></span>
+            <span class='description'><%= info[3].description %></span>
+            <span class='vintage'><%= info[3].vintage %></span>
+            <span class='price'><%= info[3].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[4].bin %></span>
+            <span class='description'><%= info[4].description %></span>
+            <span class='vintage'><%= info[4].vintage %></span>
+            <span class='price'><%= info[4].price %></span>
+        </div>
+
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>CARAFE</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[5].bin %></span>
+            <span class='description'><%= info[5].description %></span>
+            <span class='vintage'><%= info[5].vintage %></span>
+            <span class='price'><%= info[5].price %></span>
+        </div>
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>CHAMPAGNE</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[6].bin %></span>
+            <span class='description'><%= info[6].description %></span>
+            <span class='vintage'><%= info[6].vintage %></span>
+            <span class='price'><%= info[6].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[7].bin %></span>
+            <span class='description'><%= info[7].description %></span>
+            <span class='vintage'><%= info[7].vintage %></span>
+            <span class='price'><%= info[7].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[8].bin %></span>
+            <span class='description'><%= info[8].description %></span>
+            <span class='vintage'><%= info[8].vintage %></span>
+            <span class='price'><%= info[8].price %></span>
+        </div>
+        
+
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>WHITE WINE</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[9].bin %></span>
+            <span class='description'><%= info[9].description %></span>
+            <span class='vintage'><%= info[9].vintage %></span>
+            <span class='price'><%= info[9].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[10].bin %></span>
+            <span class='description'><%= info[10].description %></span>
+            <span class='vintage'><%= info[10].vintage %></span>
+            <span class='price'><%= info[10].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[11].bin %></span>
+            <span class='description'><%= info[11].description %></span>
+            <span class='vintage'><%= info[11].vintage %></span>
+            <span class='price'><%= info[11].price %></span>
+        </div>
+
+
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>ROSÉ</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[12].bin %></span>
+            <span class='description'><%= info[12].description %></span>
+            <span class='vintage'><%= info[12].vintage %></span>
+            <span class='price'><%= info[12].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[13].bin %></span>
+            <span class='description'><%= info[13].description %></span>
+            <span class='vintage'><%= info[13].vintage %></span>
+            <span class='price'><%= info[13].price %></span>
+        </div>
+
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>RED WINE</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[14].bin %></span>
+            <span class='description'><%= info[14].description %></span>
+            <span class='vintage'><%= info[14].vintage %></span>
+            <span class='price'><%= info[14].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[15].bin %></span>
+            <span class='description'><%= info[15].description %></span>
+            <span class='vintage'><%= info[15].vintage %></span>
+            <span class='price'><%= info[15].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[16].bin %></span>
+            <span class='description'><%= info[16].description %></span>
+            <span class='vintage'><%= info[16].vintage %></span>
+            <span class='price'><%= info[16].price %></span>
+        </div>
+
+
+
+
+
+    <h2><span class='bin'></span>
+        <span class='description'>DESSERT & FORTIFIED</span></h2>
+        <div class='item'>
+            <span class='bin'><%= info[17].bin %></span>
+            <span class='description'><%= info[17].description %></span>
+            <span class='vintage'><%= info[17].vintage %></span>
+            <span class='price'><%= info[17].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[18].bin %></span>
+            <span class='description'><%= info[18].description %></span>
+            <span class='vintage'><%= info[18].vintage %></span>
+            <span class='price'><%= info[18].price %></span>
+        </div>
+        <div class='item'>
+            <span class='bin'><%= info[19].bin %></span>
+            <span class='description'><%= info[19].description %></span>
+            <span class='vintage'><%= info[19].vintage %></span>
+            <span class='price'><%= info[19].price %></span>
+        </div>
+
+
+
+
+</div>
 </body>
 </html>

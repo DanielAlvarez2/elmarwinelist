@@ -25,7 +25,7 @@ app.set('view engine','ejs')
 app.use(express.static('public'))
 
 app.get('/',(req, res)=>{
-    db.collection('test').find().toArray()
+    db.collection('winelist').find().toArray()
     .then(data=>{
         res.render('index.ejs',{info:data})
     })
