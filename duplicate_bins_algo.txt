@@ -1,0 +1,19 @@
+<%
+    let a = []
+    let b = []
+    let c = new Set()
+    for(let i=0;i<info.length;i++){
+        if(info[i].bin){
+            a.push(info[i].bin)
+            b.push(info[i].bin)
+        }
+    }
+    for (let i=0;i<a.length;i++){
+        for(let j=0;j<b.length;j++){
+            if (i!=j){
+                if(a[i] == b[j]) c.add(a[i])
+            }
+        }
+    }
+    console.log(c)
+%>
